@@ -1,0 +1,23 @@
+body {
+    height: 100vh;
+    /* overflow: hidden; */
+    font-family: Roboto, sans-serif;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+body, ul {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header, .footer, a {
+    background-color: #1F2937;
+    color: #E5E7EB;
+}
