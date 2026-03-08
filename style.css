@@ -78,13 +78,16 @@ h1 {
     font-size: 18px;
 }
 
-#button-headline {
-    background-color: #3881F6;
-    color: white;
+button {
+    color: #F9FAF8;
     font-weight: bold;
     padding: 8px 35px;
     border-radius: 5px;
     font-size: 16px;
+}
+
+#button-headline {
+    background-color: #3881F6;
     border: none;
 }
 
@@ -173,4 +176,37 @@ h2 {
     display: flex;
     justify-content: flex-end;
     font-weight: bold;
+}
+
+.action {
+    padding: 100px 250px 100px 250px;
+}
+
+.call-to-action {
+    background-color: #3881F6;
+    padding: 30px 100px;
+    color: #F9FAF8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.action-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.call-action-text {
+    font-weight: bold;
+}
+
+.action-paragraph {
+    color: #E5E7EB;
+}
+
+#button-action {
+    background-color: #3881F6;
+    border: 2px solid #F9FAF8;
 }
