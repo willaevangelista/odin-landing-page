@@ -210,3 +210,10 @@ h2 {
     background-color: #3881F6;
     border: 2px solid #F9FAF8;
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 250px 30px 250px;
+}
