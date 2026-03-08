@@ -1,3 +1,9 @@
+/* Colors */
+ /* color: #1F2937;
+    color: #F9FAF8;
+    color: #E5E7EB;
+    color: #3882F9; */
+
 body {
     height: 100vh;
     /* overflow: hidden; */
@@ -149,4 +155,22 @@ h2 {
     font-size: 14px;
     color: #1F2937;
     text-align: center;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    padding: 100px 350px 100px 350px;
+}
+
+.quote-text {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
 }
