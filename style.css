@@ -1,38 +1,88 @@
-/* Colors */
- /* color: #1F2937;
-    color: #F9FAF8;
-    color: #E5E7EB;
-    color: #3882F9; */
-
 body {
     height: 100vh;
-    /* overflow: hidden; */
     font-family: Roboto, sans-serif;
 }
 
-.header, .footer {
+.header,
+.header-logo, 
+.header-link,
+.container-header,
+.headline, 
+.headline-text, 
+.headline-image-container,
+.information,
+h2, ul,
+.information-image-text,
+.containter-image,
+.author,
+.call-to-action,
+.action-texts,
+.footer {
     display: flex;
-    justify-content: justify-content;
+}
+
+.headline-text, h2,
+.information-image-text,
+.containter-image,
+.footer {
+    justify-content: center;
+}
+
+.header, 
+.header-logo, 
+.header-link,
+.headline-image-container,
+.containter-image,
+.call-to-action,
+.footer {
     align-items: center;
 }
 
-ul {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    gap: 20px;
+.headline-text,
+.information,
+.containter-image,
+.action-texts {
+    flex-direction: column;
 }
 
-body, ul {
-    margin: 0;
+.header-logo,
+h1, button,
+.call-to-action {
+    color: #F9FAF8;
 }
 
-a {
-    text-decoration: none;
+.headline-paragraph, 
+.header-link,
+.action-paragraph,
+.footer, a {
     color: #E5E7EB;
 }
 
-p {
+.quote-text,
+.information-paragraph {
+    color: #1F2937;
+}
+
+.header-logo,
+button,
+.author,
+.call-action-text {
+    font-weight: bold;
+}
+
+button,
+.information-image,
+.call-to-action {
+    border-radius: 5px;
+}
+
+#button-headline,
+.call-to-action,
+#button-action {
+    background-color: #3881F6;
+}
+
+body, ul, p, h1 {
     margin: 0;
 }
 
@@ -40,70 +90,55 @@ p {
     background-color: #1F2937;
 }
 
-.container-header {
-    display: flex;
+.container-header,
+.headline,
+.call-to-action {
     justify-content: space-between;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container-header {
     flex-grow: 1;
     margin: 20px 250px 0px 250px;
 }
 
-.header-logo, .header-link {
-    display: flex;
-    align-items: center;
-}
-
 .header-logo {
     font-size: 24px;
-    color: #F9FAF8;
-    font-weight: bold;
 }
 
-.header-link {
+.header-link, .headline-paragraph {
     font-size: 18px;
-    color: #E5E7EB;
 }
 
 h1 {
     font-size: 48px;
-    color: #F9FAF8;
     font-weight: 900;
-    margin: 0;
-}
-
-.headline-paragraph, .footer {
-    color: #E5E7EB;
-}
-
-.headline-paragraph {
-    font-size: 18px;
 }
 
 button {
-    color: #F9FAF8;
-    font-weight: bold;
     padding: 8px 35px;
-    border-radius: 5px;
     font-size: 16px;
 }
 
 #button-headline {
-    background-color: #3881F6;
     border: none;
 }
 
-.headline, .headline-text {
-    display: flex;
-}
-
 .headline {
-    justify-content: space-between;
     padding: 100px 250px;
     gap: 30px;
 }
 
 .headline-text {
-    flex-direction: column;
-    justify-content: center;
     gap: 15px
 }
 
@@ -114,35 +149,23 @@ button {
 }
 
 .headline-image-container {
-    display: flex;
-    align-items: center;
     width: 1200px;
 }
 
 .information {
-    display: flex;
-    flex-direction: column;
     padding: 50px 250px 150px 250px;
 }
 
 h2 {
-    display: flex;
-    justify-content: center;
     margin: 0 0 50px 0;
 }
 
 .information-image-text {
-    display: flex;
     gap: 40px;
     padding: 0 60px;
-    justify-content: center;
 }
 
 .containter-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 10px;
     width: 150px;
 }
@@ -150,13 +173,11 @@ h2 {
 .information-image {
     width: 150px;
     height: 150px;
-    border-radius: 5px;
     border: 3px solid #3881F6;
 }
 
 .information-paragraph {
     font-size: 14px;
-    color: #1F2937;
     text-align: center;
 }
 
@@ -167,15 +188,12 @@ h2 {
 
 .quote-text {
     font-size: 36px;
-    color: #1F2937;
     font-weight: 300;
     font-style: italic;
 }
 
 .author {
-    display: flex;
     justify-content: flex-end;
-    font-weight: bold;
 }
 
 .action {
@@ -183,37 +201,17 @@ h2 {
 }
 
 .call-to-action {
-    background-color: #3881F6;
     padding: 30px 100px;
-    color: #F9FAF8;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 5px;
 }
 
 .action-texts {
-    display: flex;
-    flex-direction: column;
     gap: 5px;
 }
 
-.call-action-text {
-    font-weight: bold;
-}
-
-.action-paragraph {
-    color: #E5E7EB;
-}
-
 #button-action {
-    background-color: #3881F6;
     border: 2px solid #F9FAF8;
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 30px 250px 30px 250px;
 }
