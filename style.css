@@ -26,6 +26,10 @@ a {
     color: #E5E7EB;
 }
 
+p {
+    margin: 0;
+}
+
 .header, .footer, a, .headline {
     background-color: #1F2937;
 }
@@ -34,7 +38,7 @@ a {
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
-    margin: 0 250px;
+    margin: 20px 250px 0px 250px;
 }
 
 .header-logo, .header-link {
@@ -60,9 +64,12 @@ h1 {
     margin: 0;
 }
 
-p {
-    font-size: 18px;
+.headline-paragraph, .footer {
     color: #E5E7EB;
+}
+
+.headline-paragraph {
+    font-size: 18px;
 }
 
 #button-headline {
@@ -88,17 +95,58 @@ p {
 .headline-text {
     flex-direction: column;
     justify-content: center;
-    gap: 10px
+    gap: 15px
 }
 
-img {
+.headline-image {
     width: 100%;
     height: 270px;
     object-fit: cover;
 }
 
-.headline-image {
+.headline-image-container {
     display: flex;
     align-items: center;
     width: 1200px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 250px 150px 250px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 50px 0;
+}
+
+.information-image-text {
+    display: flex;
+    gap: 40px;
+    padding: 0 60px;
+    justify-content: center;
+}
+
+.containter-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 150px;
+}
+
+.information-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    border: 3px solid #3881F6;
+}
+
+.information-paragraph {
+    font-size: 14px;
+    color: #1F2937;
+    text-align: center;
 }
